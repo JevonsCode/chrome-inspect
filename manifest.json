@@ -1,0 +1,26 @@
+{
+    "name": "FallBack Ability",
+    "version": "1.0",
+    "description": "chrome inspect",
+    "permissions": [
+        "declarativeContent",
+        "storage",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": [
+            "background/index.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup/index.html",
+        "default_icon": {
+            "16": "img/icon.png",
+            "32": "img/icon.png",
+            "48": "img/icon.png",
+            "128": "img/icon.png"
+        }
+    },
+    "manifest_version": 2
+}
